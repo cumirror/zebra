@@ -101,6 +101,10 @@ typedef int socklen_t;
 #include <sys/sockio.h>
 #endif /* HAVE_SYS_SOCKIO_H */
 
+#ifdef GNU_LINUX
+#define __USE_GNU
+#endif
+
 #ifdef HAVE_NETINET_IN_H
 #include <netinet/in.h>
 #endif /* HAVE_NETINET_IN_H */
